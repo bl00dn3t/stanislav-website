@@ -1,0 +1,234 @@
+/* || Tags || */
+
+* {
+    background-color: #fff;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+}
+
+a {
+	color: #000;
+	font-display: normal;
+}
+
+	a:link {
+		text-decoration: none;
+	}
+
+	a:visited {
+		color: #000;
+		text-decoration: none;
+	}
+
+	a:active {
+		text-decoration:wavy;
+	}
+
+b {
+	font-family: inherit;
+}
+
+button {
+	border: none;
+}
+
+em {
+	font-family: inherit;
+}
+
+h1 {
+	font-size: 2.25rem;
+	font-weight: normal;
+    letter-spacing: 1px;
+	margin-bottom: 1rem;
+	text-emphasis: none;
+}
+
+h1:hover {
+	background-color: #00aeef;
+	--mask:
+    radial-gradient(20.35px at 50% calc(100% + 13.65px),#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) calc(50% - 26px) calc(50% - 8px + .5px)/52px 16px repeat-x,
+    radial-gradient(20.35px at 50% -13.65px,#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) 50% calc(50% + 8px)/52px 16px repeat-x;
+  	-webkit-mask: var(--mask);
+    mask: var(--mask);
+	max-width:100%;
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 1.75rem;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+h4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	margin-bottom: 0.5rem;
+	margin-top: 1;
+}
+
+h5 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.625rem;
+	text-align: left;
+}
+
+h5 a {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+	margin-left: 2rem;
+}
+
+header nav {
+	align-items: baseline;
+	display: flex;
+	flex-direction: row;
+}
+
+header h1 {
+	margin-right: 0.938rem;
+}
+
+html,
+body {
+	height: 100%;
+	height: 100vh;
+	height: -webkit-fill-available;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+}
+
+li {
+	margin-bottom: 0;
+	margin-right: 1rem;
+	padding:0;
+}
+
+main {
+    display: flex;
+	flex: 1 0 auto;
+	flex-direction: column;
+    flex-grow: 1;
+	grid-area: main;
+	margin:0;
+	max-height: 100%;
+	max-width: 100%;
+	padding: 0;
+}
+
+p {
+	font-size: 0.85rem;
+	line-height: 2;
+	margin: 0;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+}
+
+ul {
+    list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* || Classes || */
+
+.cv-list {
+	display: flex;
+	flex-direction: row;
+	margin-top: 2rem;
+}
+
+.menu-name:hover {
+	background-color: #00aeef;
+	--mask:
+    radial-gradient(20.35px at 50% calc(100% + 13.65px),#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) calc(50% - 26px) calc(50% - 8px + .5px)/52px 16px repeat-x,
+    radial-gradient(20.35px at 50% -13.65px,#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) 50% calc(50% + 8px)/52px 16px repeat-x;
+  	-webkit-mask: var(--mask);
+    mask: var(--mask);
+	max-width:16%;
+	text-decoration: line-through #00aeef;
+}
+
+	.menu-name#aj:hover {
+		max-width:6%;
+	}
+
+.section-cv {
+	margin-left: 2rem;
+	width: 40%;
+}
+
+.splash {
+	justify-content: center;
+}
+
+	.splash nav {
+		margin-left: 2rem;
+	}
+
+.submenu {
+	animation: fadeIn 1s;
+	padding-left: 2.5rem;
+}
+
+.submenu h2:hover {
+	background-color: #00aeef;
+	--mask:
+    radial-gradient(20.35px at 50% calc(100% + 13.65px),#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) calc(50% - 26px) calc(50% - 8px + .5px)/52px 16px repeat-x,
+    radial-gradient(20.35px at 50% -13.65px,#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) 50% calc(50% + 8px)/52px 16px repeat-x;
+  	-webkit-mask: var(--mask);
+    mask: var(--mask);
+	max-width:10%;
+	text-decoration: line-through #00aeef;
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.wrapper {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: 100%;
+	grid-template-areas:
+		'header'
+		'main'
+		'footer';
+	min-height: 100vh;
+	height: -moz-available;          /* WebKit-based browsers will ignore this. */
+    height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    height: fill-available;
+	width: 100%;
+}
+
+.wrapper>* {
+	padding: 0;
+}
+
+/* || @mediaqueries || */
+
+@media only screen and (max-width: 576px) {
+	header {
+		margin-left: 1rem;
+	}
+
+	main {
+		margin: 1rem;
+	}
+
+	.section-cv {
+		margin-left: 0;
+		width:70%;
+		max-width:100%;
+	}
+  }
