@@ -51,7 +51,7 @@ h1:hover {
     radial-gradient(20.35px at 50% -13.65px,#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) 50% calc(50% + 8px)/52px 16px repeat-x;
   	-webkit-mask: var(--mask);
     mask: var(--mask);
-	/* remove max-width:100%; */
+	max-width:100%;
 	text-decoration: none;
 }
 
@@ -117,7 +117,7 @@ main {
 	grid-area: main;
 	margin:0;
 	max-height: 100%;
-	/* max-width: 100%; */
+	max-width: 100%;
 	padding: 0;
 }
 
@@ -187,7 +187,7 @@ ul {
     radial-gradient(20.35px at 50% -13.65px,#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) 50% calc(50% + 8px)/52px 16px repeat-x;
   	-webkit-mask: var(--mask);
     mask: var(--mask);
-	/* max-width:10%; */
+	max-width:10%;
 	text-decoration: line-through #00aeef;
 }
 
@@ -229,6 +229,6 @@ ul {
 	.section-cv {
 		margin-left: 0;
 		width:70%;
-		/* max-width:100%; */
+		max-width:100%;
 	}
   }
