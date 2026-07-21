@@ -172,7 +172,7 @@ ul {
 }*/
 .splash {
 	justify-content: flex-start;
-	padding-top: 20vh;   /* adjust this value to taste, to match where it used to sit */
+	padding-top: 120vh;   /* adjust this value to taste, to match where it used to sit */
 }
 	.splash nav {
 		margin-left: 2rem;
