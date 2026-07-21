@@ -167,10 +167,13 @@ ul {
 	width: 40%;
 }
 
-.splash {
+/*.splash {
 	justify-content: center;
+}*/
+.splash {
+	justify-content: flex-start;
+	padding-top: 20vh;   /* adjust this value to taste, to match where it used to sit */
 }
-
 	.splash nav {
 		margin-left: 2rem;
 	}
