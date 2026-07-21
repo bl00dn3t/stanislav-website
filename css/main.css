@@ -150,7 +150,10 @@ ul {
 	flex-direction: row;
 	margin-top: 2rem;
 }
-
+.cv-list h1.menu-name {
+	font-size: 1.3rem;   /* try this, adjust up/down to taste */
+	margin-bottom: 0;
+}
 .menu-name:hover {
 	background-color: #00aeef;
 	color: transparent;
@@ -161,12 +164,19 @@ ul {
     mask: var(--mask);
 	text-decoration: line-through #00aeef;
 }
-
+.cv-list h1.menu-name:hover {
+	--mask:
+    radial-gradient(15.26px at 50% calc(100% + 10.24px),#0000 calc(99% - 2.25px),#000 calc(101% - 2.25px) 99%,#0000 101%) calc(50% - 19.5px) calc(50% - 6px + .375px)/39px 12px repeat-x,
+    radial-gradient(15.26px at 50% -10.24px,#0000 calc(99% - 2.25px),#000 calc(101% - 2.25px) 99%,#0000 101%) 50% calc(50% + 6px)/39px 12px repeat-x;
+}
 .section-cv {
 	margin-left: 2rem;
-	width: 40%;
+	width: 90%;
+	max-width: 600px;
 }
-
+.portfolio main {
+	padding-bottom: 2rem;
+}
 /*.splash {
 	justify-content: center;
 }*/
