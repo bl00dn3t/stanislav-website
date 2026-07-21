@@ -37,6 +37,8 @@ em {
 }
 
 h1 {
+	display: inline-block;
+	width: fit-content;
 	font-size: 2.25rem;
 	font-weight: normal;
     letter-spacing: 1px;
@@ -46,16 +48,18 @@ h1 {
 
 h1:hover {
 	background-color: #00aeef;
+	color: transparent;
 	--mask:
     radial-gradient(20.35px at 50% calc(100% + 13.65px),#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) calc(50% - 26px) calc(50% - 8px + .5px)/52px 16px repeat-x,
     radial-gradient(20.35px at 50% -13.65px,#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) 50% calc(50% + 8px)/52px 16px repeat-x;
   	-webkit-mask: var(--mask);
     mask: var(--mask);
-	max-width:100%;
 	text-decoration: none;
 }
 
 h2 {
+	display: inline-block;
+	width: fit-content;
 	font-size: 1.75rem;
 	font-weight: normal;
 	margin: 0;
@@ -149,18 +153,14 @@ ul {
 
 .menu-name:hover {
 	background-color: #00aeef;
+	color: transparent;
 	--mask:
     radial-gradient(20.35px at 50% calc(100% + 13.65px),#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) calc(50% - 26px) calc(50% - 8px + .5px)/52px 16px repeat-x,
     radial-gradient(20.35px at 50% -13.65px,#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) 50% calc(50% + 8px)/52px 16px repeat-x;
   	-webkit-mask: var(--mask);
     mask: var(--mask);
-	max-width:16%;
 	text-decoration: line-through #00aeef;
 }
-
-	.menu-name#aj:hover {
-		max-width:6%;
-	}
 
 .section-cv {
 	margin-left: 2rem;
@@ -182,12 +182,12 @@ ul {
 
 .submenu h2:hover {
 	background-color: #00aeef;
+	color: transparent;
 	--mask:
     radial-gradient(20.35px at 50% calc(100% + 13.65px),#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) calc(50% - 26px) calc(50% - 8px + .5px)/52px 16px repeat-x,
     radial-gradient(20.35px at 50% -13.65px,#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) 50% calc(50% + 8px)/52px 16px repeat-x;
   	-webkit-mask: var(--mask);
     mask: var(--mask);
-	max-width:10%;
 	text-decoration: line-through #00aeef;
 }
 
