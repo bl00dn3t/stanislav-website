@@ -186,7 +186,7 @@ ul {
 }
 
 	.splash nav {
-		margin-top: calc(50vh - 130px);   /* 70px = half of the 140px measured height */
+		margin-top: calc(50vh - 140px);   /* 70px = half of the 140px measured height */
 		margin-left: 2rem;
 	}
 
